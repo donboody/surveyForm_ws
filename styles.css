@@ -1,21 +1,36 @@
+.section-header {
+    width: 690px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-header-wrapper {
+    width: 100%;
+    border-radius: 5px;
+    background: darkred;
+    padding-bottom: 1px;
+
+}
+
+
+.section-header-text {
+    text-align: center;
+    color: white;
+}
+
 .d1 {
     grid-row: 1/2;
 }
 
 .component-label {
     margin-left: 10px;
+    font-size: 85%;
 }
 
 .d2 {
     margin-left: 10px;
     grid-row: 2/3;
 }
-
-.comments-label {
-    margin-top: auto;
-}
-
-
 
 .d3 {
 
@@ -51,4 +66,8 @@ textarea {
 
 select {
     border-radius: 5px;
+}
+
+main {
+    font-family: 'Roboto', sans-serif;
 }
