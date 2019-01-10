@@ -1,0 +1,54 @@
+.d1 {
+    grid-row: 1/2;
+}
+
+.component-label {
+    margin-left: 10px;
+}
+
+.d2 {
+    margin-left: 10px;
+    grid-row: 2/3;
+}
+
+.comments-label {
+    margin-top: auto;
+}
+
+
+
+.d3 {
+
+    grid-row: 1/3;
+    grid-column: 2/3;
+}
+
+
+.container {
+    margin: auto;
+    max-width: 700px;
+    background: #efefef;
+    border-radius: 5px;
+    display: grid;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 15px;
+    margin-top: 2.5px;
+    margin-bottom: 2.5px;
+    grid-template-columns: 75px auto 2fr;
+    grid-column-gap: 20px;
+    grid-template-rows: 25px 25px;
+}
+
+#big-box {
+    display: flex;
+    flex-direction: column;
+}
+
+textarea {
+    border-radius: 5px;
+}
+
+select {
+    border-radius: 5px;
+}
