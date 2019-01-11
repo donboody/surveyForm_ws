@@ -12,166 +12,373 @@
             @import url('https://fonts.googleapis.com/css?family=Roboto');
         </style>
     </head>
-    <div id="big-box">
-        <div class="section-header">
+
+
+    <!--
+    <img id="image" src=" https://images.pexels.com/photos/462358/pexels-photo-462358.jpeg?cs=srgb&dl=architectural-design-architecture-blue-sky-462358.jpg&fm=jpg"
+        alt="Chekhov's classic look: Pince-nez, hat, and bow-tie">
+    -->
+
+    <div class="big-box">
+
+        <div class="container-1">
+
             <div class="section-header-wrapper">
-                <p class="section-header-text">Dwelling Conditions</p>
+                <p class="section-header-text">Dwelling Exterior Conditions</p>
             </div>
-        </div>
-        <!--Roof Concerns-->
-        <div class="container">
-            <div class="d1">
-                <form id="dwelling-exterior-conditions">
-                    <label for="roof-severity" class="component-label" id="roof-label">Roof</label>
+
+            <!--Roof Concerns-->
+            <div class="container">
+                <div class="d1">
+                    <form id="dwelling-exterior-conditions">
+                        <label for="roof-severity" class="component-label" id="roof-label">Roof</label>
+                </div>
+                <div class="d2">
+                    <select id="roof-severity" name="roof-severity">
+                        <option value="none"></option>
+                        <option value="major">Major</option>
+                        <option value="minor">Minor</option>
+                        <option value="ok">OK</option>
+                    </select>
+                </div>
+                </form>
+                <div class="d3">
+                    <textarea rows="3" cols="75" name="roof-severity-comments" placeholder="Comments..."></textarea>
+                </div>
             </div>
-            <div class="d2">
-                <select id="roof-severity" name="roof-severity">
-                    <option value="none"></option>
-                    <option value="major">Major</option>
-                    <option value="minor">Minor</option>
-                    <option value="ok">OK</option>
-                </select>
+            <!--Chimney Concerns-->
+            <div class="container">
+                <div class="d1">
+                    <form id="dwelling-exterior-conditions">
+                        <label for="chimney-severity" class="component-label" id="chimney-label">Chimney</label>
+                </div>
+                <div class="d2">
+                    <select id="chimney-severity" name="chimney-severity">
+                        <option value="none"></option>
+                        <option value="major">Major</option>
+                        <option value="minor">Minor</option>
+                        <option value="ok">OK</option>
+                    </select>
+                </div>
+                </form>
+                <div class="d3">
+                    <textarea rows="3" cols="75" name="chimney-severity-comments" placeholder="Comments..."></textarea>
+                </div>
             </div>
-            </form>
-            <div class="d3">
-                <textarea rows="3" cols="75" name="roof-severity-comments" placeholder="Comments..."></textarea>
+            <!--Eaves Concerns-->
+            <div class="container">
+                <div class="d1">
+                    <form id="dwelling-exterior-conditions">
+                        <label for="eaves-severity" class="component-label" id="eaves-label">Eaves</label>
+                </div>
+                <div class="d2">
+                    <select id="eaves-severity" name="eaves-severity">
+                        <option value="none"></option>
+                        <option value="major">Major</option>
+                        <option value="minor">Minor</option>
+                        <option value="ok">OK</option>
+                    </select>
+                </div>
+                </form>
+                <div class="d3">
+                    <textarea rows="3" cols="75" name="eaves-severity-comments" placeholder="Comments..."></textarea>
+                </div>
             </div>
-        </div>
-        <!--Chimney Concerns-->
-        <div class="container">
-            <div class="d1">
-                <form id="dwelling-exterior-conditions">
-                    <label for="chimney-severity" class="component-label" id="chimney-label">Chimney</label>
+            <!--Siding Concerns-->
+            <div class="container">
+                <div class="d1">
+                    <form id="dwelling-exterior-conditions">
+                        <label for="siding-severity" class="component-label" id="siding-label">Siding</label>
+                </div>
+                <div class="d2">
+                    <select id="siding-severity" name="siding-severity">
+                        <option value="none"></option>
+                        <option value="major">Major</option>
+                        <option value="minor">Minor</option>
+                        <option value="ok">OK</option>
+                    </select>
+                </div>
+                </form>
+                <div class="d3">
+                    <textarea rows="3" cols="75" name="siding-severity-comments" placeholder="Comments..."></textarea>
+                </div>
             </div>
-            <div class="d2">
-                <select id="chimney-severity" name="chimney-severity">
-                    <option value="none"></option>
-                    <option value="major">Major</option>
-                    <option value="minor">Minor</option>
-                    <option value="ok">OK</option>
-                </select>
+            <!--Window Concerns-->
+            <div class="container">
+                <div class="d1">
+                    <form id="dwelling-exterior-conditions">
+                        <label for="window-severity" class="component-label" id="window-label">Windows</label>
+                </div>
+                <div class="d2">
+                    <select id="window-severity" name="window-severity">
+                        <option value="none"></option>
+                        <option value="major">Major</option>
+                        <option value="minor">Minor</option>
+                        <option value="ok">OK</option>
+                    </select>
+                </div>
+                </form>
+                <div class="d3">
+                    <textarea rows="3" cols="75" name="window-severity-comments" placeholder="Comments..."></textarea>
+                </div>
             </div>
-            </form>
-            <div class="d3">
-                <textarea rows="3" cols="75" name="chimney-severity-comments" placeholder="Comments..."></textarea>
+            <!--Door Concerns-->
+            <div class="container">
+                <div class="d1">
+                    <form id="dwelling-exterior-conditions">
+                        <label for="door-severity" class="component-label" id="door-label">Doors</label>
+                </div>
+                <div class="d2">
+                    <select id="door-severity" name="door-severity">
+                        <option value="none"></option>
+                        <option value="major">Major</option>
+                        <option value="minor">Minor</option>
+                        <option value="ok">OK</option>
+                    </select>
+                </div>
+                </form>
+                <div class="d3">
+                    <textarea rows="3" cols="75" name="door-severity-comments" placeholder="Comments..."></textarea>
+                </div>
             </div>
-        </div>
-        <!--Eaves Concerns-->
-        <div class="container">
-            <div class="d1">
-                <form id="dwelling-exterior-conditions">
-                    <label for="eaves-severity" class="component-label" id="eaves-label">Eaves</label>
+            <!--Steps Concerns-->
+            <div class="container">
+                <div class="d1">
+                    <form id="dwelling-exterior-conditions">
+                        <label for="steps-severity" class="component-label" id="steps-label">Steps</label>
+                </div>
+                <div class="d2">
+                    <select id="steps-severity" name="steps-severity">
+                        <option value="none"></option>
+                        <option value="major">Major</option>
+                        <option value="minor">Minor</option>
+                        <option value="ok">OK</option>
+                    </select>
+                </div>
+                </form>
+                <div class="d3">
+                    <textarea rows="3" cols="75" name="steps-severity-comments" placeholder="Comments..."></textarea>
+                </div>
             </div>
-            <div class="d2">
-                <select id="eaves-severity" name="eaves-severity">
-                    <option value="none"></option>
-                    <option value="major">Major</option>
-                    <option value="minor">Minor</option>
-                    <option value="ok">OK</option>
-                </select>
+            <!--Foundation Concerns-->
+            <div class="container">
+                <div class="d1">
+                    <form id="dwelling-exterior-conditions">
+                        <label for="foundation-severity" class="component-label" id="foundation-label">Foundation</label>
+                </div>
+                <div class="d2">
+                    <select id="foundation-severity" name="foundation-severity">
+                        <option value="none"></option>
+                        <option value="major">Major</option>
+                        <option value="minor">Minor</option>
+                        <option value="ok">OK</option>
+                    </select>
+                </div>
+                </form>
+                <div class="d3">
+                    <textarea rows="3" cols="75" name="foundation-severity-comments" placeholder="Comments..."></textarea>
+                </div>
             </div>
-            </form>
-            <div class="d3">
-                <textarea rows="3" cols="75" name="eaves-severity-comments" placeholder="Comments..."></textarea>
-            </div>
-        </div>
-        <!--Siding Concerns-->
-        <div class="container">
-            <div class="d1">
-                <form id="dwelling-exterior-conditions">
-                    <label for="siding-severity" class="component-label" id="siding-label">Siding</label>
-            </div>
-            <div class="d2">
-                <select id="siding-severity" name="siding-severity">
-                    <option value="none"></option>
-                    <option value="major">Major</option>
-                    <option value="minor">Minor</option>
-                    <option value="ok">OK</option>
-                </select>
-            </div>
-            </form>
-            <div class="d3">
-                <textarea rows="3" cols="75" name="siding-severity-comments" placeholder="Comments..."></textarea>
-            </div>
-        </div>
-        <!--Window Concerns-->
-        <div class="container">
-            <div class="d1">
-                <form id="dwelling-exterior-conditions">
-                    <label for="window-severity" class="component-label" id="window-label">Windows</label>
-            </div>
-            <div class="d2">
-                <select id="window-severity" name="window-severity">
-                    <option value="none"></option>
-                    <option value="major">Major</option>
-                    <option value="minor">Minor</option>
-                    <option value="ok">OK</option>
-                </select>
-            </div>
-            </form>
-            <div class="d3">
-                <textarea rows="3" cols="75" name="window-severity-comments" placeholder="Comments..."></textarea>
-            </div>
-        </div>
-        <!--Door Concerns-->
-        <div class="container">
-            <div class="d1">
-                <form id="dwelling-exterior-conditions">
-                    <label for="door-severity" class="component-label" id="door-label">Doors</label>
-            </div>
-            <div class="d2">
-                <select id="door-severity" name="door-severity">
-                    <option value="none"></option>
-                    <option value="major">Major</option>
-                    <option value="minor">Minor</option>
-                    <option value="ok">OK</option>
-                </select>
-            </div>
-            </form>
-            <div class="d3">
-                <textarea rows="3" cols="75" name="door-severity-comments" placeholder="Comments..."></textarea>
-            </div>
-        </div>
-        <!--Steps Concerns-->
-        <div class="container">
-            <div class="d1">
-                <form id="dwelling-exterior-conditions">
-                    <label for="steps-severity" class="component-label" id="steps-label">Steps</label>
-            </div>
-            <div class="d2">
-                <select id="steps-severity" name="steps-severity">
-                    <option value="none"></option>
-                    <option value="major">Major</option>
-                    <option value="minor">Minor</option>
-                    <option value="ok">OK</option>
-                </select>
-            </div>
-            </form>
-            <div class="d3">
-                <textarea rows="3" cols="75" name="steps-severity-comments" placeholder="Comments..."></textarea>
-            </div>
-        </div>
-        <!--Foundation Concerns-->
-        <div class="container">
-            <div class="d1">
-                <form id="dwelling-exterior-conditions">
-                    <label for="foundation-severity" class="component-label" id="foundation-label">Foundation</label>
-            </div>
-            <div class="d2">
-                <select id="foundation-severity" name="foundation-severity">
-                    <option value="none"></option>
-                    <option value="major">Major</option>
-                    <option value="minor">Minor</option>
-                    <option value="ok">OK</option>
-                </select>
-            </div>
-            </form>
-            <div class="d3">
-                <textarea rows="3" cols="75" name="foundation-severity-comments" placeholder="Comments..."></textarea>
-            </div>
+
         </div>
 
+        <!--Other structures-->
+        <div class="container-1">
+
+            <div class="section-header-wrapper">
+                <p class="section-header-text">Other Structures</p>
+            </div>
+
+            <!--Pool-->
+            <div class="container">
+                <div class="d1">
+                    <form id="other-structures">
+                        <label for="pool-severity" class="component-label" id="pool-label">Pool</label>
+                </div>
+                <div class="d2">
+                    <select id="pool-severity" name="pool-severity">
+                        <option value="none"></option>
+                        <option value="major">Major</option>
+                        <option value="minor">Minor</option>
+                        <option value="ok">OK</option>
+                    </select>
+                </div>
+                </form>
+                <div class="d3">
+                    <textarea rows="3" cols="75" name="pool-severity-comments" placeholder="Comments..."></textarea>
+                </div>
+            </div>
+            <!--Garage-->
+            <div class="container">
+                <div class="d1">
+                    <form id="other-structures">
+                        <label for="garage-severity" class="component-label" id="garage-label">Garage</label>
+                </div>
+                <div class="d2">
+                    <select id="garage-severity" name="garage-severity">
+                        <option value="none"></option>
+                        <option value="major">Major</option>
+                        <option value="minor">Minor</option>
+                        <option value="ok">OK</option>
+                    </select>
+                </div>
+                </form>
+                <div class="d3">
+                    <textarea rows="3" cols="75" name="garage-severity-comments" placeholder="Comments..."></textarea>
+                </div>
+            </div>
+            <!--Outbuilding-->
+            <div class="container">
+                <div class="d1">
+                    <form id="other-structures">
+                        <label for="outbuilding-severity" class="component-label" id="outbuilding-label">Outbuilding</label>
+                </div>
+                <div class="d2">
+                    <select id="outbuilding-severity" name="outbuilding-severity">
+                        <option value="none"></option>
+                        <option value="major">Major</option>
+                        <option value="minor">Minor</option>
+                        <option value="ok">OK</option>
+                    </select>
+                </div>
+                </form>
+                <div class="d3">
+                    <textarea rows="3" cols="75" name="outbuilding-severity-comments" placeholder="Comments..."></textarea>
+                </div>
+            </div>
+            <!--Other-->
+            <div class="container">
+                <div class="d1">
+                    <form id="other-structures">
+                        <label for="other-severity" class="component-label" id="other-label">Other</label>
+                </div>
+                <div class="d2">
+                    <select id="other-severity" name="other-severity">
+                        <option value="none"></option>
+                        <option value="major">Major</option>
+                        <option value="minor">Minor</option>
+                        <option value="ok">OK</option>
+                    </select>
+                </div>
+                </form>
+                <div class="d3">
+                    <textarea rows="3" cols="75" name="other-severity-comments" placeholder="Comments..."></textarea>
+                </div>
+            </div>
+
+        </div>
+
+        <!--Property-->
+        <div class="container-1">
+
+            <div class="section-header-wrapper">
+                <p class="section-header-text">Property Liability</p>
+            </div>
+
+            <!--Yard-->
+            <div class="container">
+                <div class="d1">
+                    <form id="property-liability">
+                        <label for="yard-severity" class="component-label" id="yard-label">Yard</label>
+                </div>
+                <div class="d2">
+                    <select id="yard-severity" name="yard-severity">
+                        <option value="none"></option>
+                        <option value="major">Major</option>
+                        <option value="minor">Minor</option>
+                        <option value="ok">OK</option>
+                    </select>
+                </div>
+                </form>
+                <div class="d3">
+                    <textarea rows="3" cols="75" name="yard-severity-comments" placeholder="Comments..."></textarea>
+                </div>
+            </div>
+            <!--Trees-->
+            <div class="container">
+                <div class="d1">
+                    <form id="property-liability">
+                        <label for="trees-severity" class="component-label" id="trees-label">Trees</label>
+                </div>
+                <div class="d2">
+                    <select id="trees-severity" name="trees-severity">
+                        <option value="none"></option>
+                        <option value="major">Major</option>
+                        <option value="minor">Minor</option>
+                        <option value="ok">OK</option>
+                    </select>
+                </div>
+                </form>
+                <div class="d3">
+                    <textarea rows="3" cols="75" name="trees-severity-comments" placeholder="Comments..."></textarea>
+                </div>
+            </div>
+            <!--Walkways-->
+            <div class="container">
+                <div class="d1">
+                    <form id="property-liability">
+                        <label for="walkway-severity" class="component-label" id="outbwalkwayuilding-label">Walkways</label>
+                </div>
+                <div class="d2">
+                    <select id="walkway-severity" name="walkway-severity">
+                        <option value="none"></option>
+                        <option value="major">Major</option>
+                        <option value="minor">Minor</option>
+                        <option value="ok">OK</option>
+                    </select>
+                </div>
+                </form>
+                <div class="d3">
+                    <textarea rows="3" cols="75" name="walkway-severity-comments" placeholder="Comments..."></textarea>
+                </div>
+            </div>
+            <!--Exposures-->
+            <div class="container">
+                <div class="d1">
+                    <form id="property-liability">
+                        <label for="exposure-severity" class="component-label" id="exposure-label">Exposures</label>
+                </div>
+                <div class="d2">
+                    <select id="exposure-severity" name="exposure-severity">
+                        <option value="none"></option>
+                        <option value="major">Major</option>
+                        <option value="minor">Minor</option>
+                        <option value="ok">OK</option>
+                    </select>
+                </div>
+                </form>
+                <div class="d3">
+                    <textarea rows="3" cols="75" name="exposure-severity-comments" placeholder="Comments..."></textarea>
+                </div>
+            </div>
+            <!--Other-->
+            <div class="container">
+                <div class="d1">
+                    <form id="property-liability">
+                        <label for="other-liability-severity" class="component-label" id="other-liability-label">Other</label>
+                </div>
+                <div class="d2">
+                    <select id="other-liability-severity" name="other-liability-severity">
+                        <option value="none"></option>
+                        <option value="major">Major</option>
+                        <option value="minor">Minor</option>
+                        <option value="ok">OK</option>
+                    </select>
+                </div>
+                </form>
+                <div class="d3">
+                    <textarea rows="3" cols="75" name="other-liability-severity-comments" placeholder="Comments..."></textarea>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
     </div>
+
 </main>
 
 </html>
