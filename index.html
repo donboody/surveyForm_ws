@@ -17,6 +17,24 @@
 
     <div class="big-box">
         <h1 id="prc-header">Property Condition Report</h1>
+
+        <label for="year-built">Year built</label>
+        <input type="year-built" name="year-built" min="1492" max="2999">
+
+        <label for="living-area">Living area (sqft)</label>
+        <input type="living-area" name="living-area" min="0">
+
+        <label for="construction-class" id="construction-class">Construction class</label>
+        <select id="construction-class" name="construction-class">
+            <option value="none"></option>
+            <option value="iso-one" selected>ISO-1</option>
+            <option value="iso-two">ISO-2</option>
+            <option value="iso-three">ISO-3</option>
+            <option value="iso-four">ISO-4</option>
+            <option value="iso-five">ISO-5</option>
+        </select>
+
+
         <div class="container-1">
             <div class="container-2">
 
