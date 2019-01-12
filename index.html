@@ -3,10 +3,6 @@
 <main id="main">
     <title>Property Condition Report</title>
 
-    <!--Consider making a second grid where there are two rows. Top row is section header,
-        section row is big box where all the content lives. One for each section. That should solve
-        the alignment issue with headers. -->
-
     <head>
         <link rel="stylesheet" type="text/css" href="styles.css">
         <style>
@@ -17,23 +13,6 @@
 
     <div class="big-box">
         <h1 id="prc-header">Property Condition Report</h1>
-
-        <label for="year-built">Year built</label>
-        <input type="year-built" name="year-built" min="1492" max="2999">
-
-        <label for="living-area">Living area (sqft)</label>
-        <input type="living-area" name="living-area" min="0">
-
-        <label for="construction-class" id="construction-class">Construction class</label>
-        <select id="construction-class" name="construction-class">
-            <option value="none"></option>
-            <option value="iso-one" selected>ISO-1</option>
-            <option value="iso-two">ISO-2</option>
-            <option value="iso-three">ISO-3</option>
-            <option value="iso-four">ISO-4</option>
-            <option value="iso-five">ISO-5</option>
-        </select>
-
 
         <div class="container-1">
             <div class="container-2">
@@ -85,6 +64,77 @@
                         <p class="med-text">7811</p>
                     </div>
                 </div>
+            </div>
+
+            <div class="section-header-wrapper">
+                <p class="section-header-text">General Information</p>
+            </div>
+
+            <div id="general-information-section">
+                <form id="general information">
+                    <div id="general-information-left">
+
+                        <div>
+                            <label for="year-built">Year built</label>
+                        </div>
+                        <div>
+                            <input type="number" name="year-built" min="1492" max="2999">
+                        </div>
+
+                        <div>
+                            <label for="living-area">Living area (sqft)</label>
+                        </div>
+                        <div>
+                            <input type="number" name="living-area" min="0">
+                        </div>
+
+                        <div>
+                            <label for="construction-class" id="construction-class">Construction class</label>
+                        </div>
+                        <div>
+                            <select id="construction-class" name="construction-class">
+                                <option value="none"></option>
+                                <option value="iso-one" selected>ISO-1</option>
+                                <option value="iso-two">ISO-2</option>
+                                <option value="iso-three">ISO-3</option>
+                                <option value="iso-four">ISO-4</option>
+                                <option value="iso-five">ISO-5</option>
+                            </select>
+                        </div>
+                    </div>
+                </form>
+
+                <form id="general information">
+                    <div id="general-information-right">
+
+                        <div>
+                            <label for="distance-to-hydrant">Distance to fire hydrant (ft)</label>
+                        </div>
+                        <div>
+                            <input type="number" name="distance-to-hydrant" min="0">
+                        </div>
+
+                        <div>
+                            <label for="living-area">Distance to fire department (mi)</label>
+                        </div>
+                        <div>
+                            <input type="living-area" name="living-area" min="0">
+                        </div>
+
+                        <div>
+                            <label for="adequate-visibility-from-road" id="adequate-visibility-from-road">Adequate
+                                visibility from road</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="visible-from-road" value="yes"><label for="yes" class="radiolabel">Yes</label>
+                            <input type="radio" name="visible-from-road" value="no"><label for="no" class="radiolabel">No</label>
+
+                        </div>
+                    </div>
+                </form>
+
+
+
             </div>
 
 
