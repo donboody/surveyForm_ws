@@ -78,14 +78,14 @@
                             <label for="year-built">Year built</label>
                         </div>
                         <div>
-                            <input type="number" name="year-built" min="1492" max="2999">
+                            <input type="number" name="year-built" min="1492" max="2999" value="1976">
                         </div>
 
                         <div>
                             <label for="living-area">Living area (sqft)</label>
                         </div>
                         <div>
-                            <input type="number" name="living-area" min="0">
+                            <input type="number" name="living-area" min="0" value="1250">
                         </div>
 
                         <div>
@@ -111,14 +111,14 @@
                             <label for="distance-to-hydrant">Distance to fire hydrant (ft)</label>
                         </div>
                         <div>
-                            <input type="number" name="distance-to-hydrant" min="0">
+                            <input type="number" name="distance-to-hydrant" min="0" value="350">
                         </div>
 
                         <div>
                             <label for="living-area">Distance to fire department (mi)</label>
                         </div>
                         <div>
-                            <input type="living-area" name="living-area" min="0">
+                            <input type="number" name="distance-to-fire-department" min="0" value="4">
                         </div>
 
                         <div>
@@ -126,7 +126,7 @@
                                 visibility from road</label>
                         </div>
                         <div>
-                            <input type="radio" name="visible-from-road" value="yes"><label for="yes" class="radiolabel">Yes</label>
+                            <input type="radio" name="visible-from-road" value="yes" checked><label for="yes" class="radiolabel">Yes</label>
                             <input type="radio" name="visible-from-road" value="no"><label for="no" class="radiolabel">No</label>
 
                         </div>
@@ -333,14 +333,14 @@
                 <div class="d2">
                     <select id="garage-severity" name="garage-severity">
                         <option value="none"></option>
-                        <option value="major">Major</option>
+                        <option value="major" selected>Major</option>
                         <option value="minor">Minor</option>
                         <option value="ok">OK</option>
                     </select>
                 </div>
                 </form>
                 <div class="d3">
-                    <textarea rows="3" cols="75" name="garage-severity-comments" placeholder="Comments..."></textarea>
+                    <textarea rows="3" cols="75" name="garage-severity-comments" placeholder="Comments...">Evidence of animal infestation in 400sqft detached garage located in rear yard.</textarea>
                 </div>
             </div>
             <!--Outbuilding-->
@@ -488,6 +488,53 @@
             </div>
 
         </div>
+
+        <!--Additional Comments-->
+        <div class="container-1">
+
+            <div class="section-header-wrapper">
+                <p class="section-header-text">Additional Comments</p>
+            </div>
+
+            <!--Additonal comments-->
+            <div class="container-additional-comments">
+
+                <div class="d3-additional">
+                    <textarea rows="4" cols="85" name="additional-comments" placeholder="Comments...">Upon arrival at 20 Farmdale Ave, inspector was greeted at door by policyholder Thomas Test, who allowed full access to property.</textarea>
+                </div>
+            </div>
+
+        </div>
+
+        <!--Submission-->
+        <div class="container-1">
+
+            <div class="section-header-wrapper">
+                <p class="section-header-text">Report Submission</p>
+            </div>
+
+            <!--Additonal comments-->
+            <div class="container-submission">
+                <div class="d1">
+                    <p class="med-text">I hereby attest that the below name and email address information acts as my
+                        digital signature.</p>
+                </div>
+                <div class="credential-input-container">
+                    <input class="credential-input-left" type="text" placeholder="Name" value="Hector Inspector">
+                    <input class="credential-input-right" type="text" placeholder="Email address" value="hector@inspector.com">
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <button type="submit">Submit</button>
+
+
+
+
+    </div>
 
 
 
