@@ -115,25 +115,55 @@ img {
     margin-top: 2.5px;
     margin-bottom: 2.5px;
     grid-template-columns: auto;
-    grid-template-rows: 25px 40px;
+    grid-template-rows: 25px 40px auto;
 }
 
 .credential-input-container {
+    margin-top: 10px;
     display: flex;
 }
 
-.credential-input-left {
-    height: 20px !important;
-    margin-top: 10px;
-    margin-right: 10px;
-    width: 100% !important;
+.credential-input-container-1 {
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+
 }
 
-.credential-input-right {
+#credential-input-left {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.name-input {
     height: 20px !important;
-    margin-top: 10px;
-    margin-left: 10px;
-    width: 100% !important;
+    margin-top: 5px;
+
+    width: 275px !important;
+}
+
+#credential-input-right {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.email-input {
+    height: 20px !important;
+    margin-top: 5px;
+    width: 275px !important;
+}
+
+.checkbox-left {
+    margin-left: 20px;
+    width: auto !important;
+}
+
+.checkbox-right {
+    margin-left: 20px;
+    width: auto !important;
 }
 
 
@@ -239,6 +269,16 @@ input[type='radio'] {
 
 .radiolabel {
     display: inline;
+}
+
+.credential-label {
+    display: inline;
+    font-size: 80%;
+}
+
+.checkboxlabel {
+    display: inline;
+    margin-left: 5px;
 }
 
 button {

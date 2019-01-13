@@ -1,539 +1,557 @@
 <!DOCTYPE html>
 <html>
 <main id="main">
-    <title>Property Condition Report</title>
+    <form id="survey-form">
+        <title>Property Condition Report</title>
 
-    <head>
-        <link rel="stylesheet" type="text/css" href="styles.css">
-        <style>
-            @import url('https://fonts.googleapis.com/css?family=Roboto');
+        <head>
+            <link rel="stylesheet" type="text/css" href="styles.css">
+            <style>
+                @import url('https://fonts.googleapis.com/css?family=Roboto');
         </style>
-    </head>
+        </head>
 
 
-    <div class="big-box">
-        <h1 id="title">Property Condition Report</h1>
+        <div class="big-box">
 
-        <div class="container-1">
-            <div class="container-2">
+            <h1 id="title">Property Condition Report</h1>
 
-                <!--Case header left-->
-                <div class="case-header">
-                    <div id=" address-header">
-                        <p class="small-text">Address</p>
-                        <p class="med-text">20 Farmdale Ave</p>
-                        <p class="med-text">West Onondoga, NY</p>
-                        <p class="med-text">14150</p>
-                    </div>
+            <div class="container-1">
+                <div class="container-2">
 
-                    <div id="geo-header">
-                        <p class="small-text">Latitude</p>
-                        <p class="med-text">25.0000 N</p>
-                        <p class="small-text">Longitude, NY</p>
-                        <p class="med-text">71.0000 W</p>
-                    </div>
-
-                    <div id="owner-header">
-                        <p class="small-text">Owner</p>
-                        <p class="med-text">Thomas Test</p>
-                        <p class="med-text">555-555-5555</p>
-                    </div>
-                </div>
-                <img id="image" src="http://i65.tinypic.com/2a4ttf9.png" alt="House photo">
-                <!--Case header right-->
-                <div class="case-header" id="case-header-right">
-                    <div id=" customer-header">
-                        <p class="small-text">Insurance Company</p>
-                        <p class="med-text">Mallstate-NY</p>
-                    </div>
-
-                    <div id="survey-type-header">
-                        <p class="small-text">Survey Type</p>
-                        <p class="med-text">Exterior Only</p>
-                    </div>
-
-                    <div id="due-date-header">
-                        <p class="small-text">Date Received</p>
-                        <p class="med-text">01/11/2019</p>
-                        <p class="small-text">Date Due</p>
-                        <p class="med-text">01/21/2019</p>
-                    </div>
-
-                    <div id="inspector-number-header">
-                        <p class="small-text">Inspector Number</p>
-                        <p class="med-text">7811</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="section-header-wrapper">
-                <p class="section-header-text">General Information</p>
-            </div>
-
-            <div id="general-information-section">
-                <form id="general information">
-                    <div id="general-information-left">
-
-                        <div>
-                            <label for="year-built">Year built</label>
-                        </div>
-                        <div>
-                            <input type="number" name="year-built" min="1492" max="2999" value="1976">
+                    <!--Case header left-->
+                    <div class="case-header">
+                        <div id=" address-header">
+                            <p class="small-text">Address</p>
+                            <p class="med-text">20 Farmdale Ave</p>
+                            <p class="med-text">West Onondoga, NY</p>
+                            <p class="med-text">14150</p>
                         </div>
 
-                        <div>
-                            <label for="living-area">Living area (sqft)</label>
-                        </div>
-                        <div>
-                            <input type="number" name="living-area" min="0" value="1250">
+                        <div id="geo-header">
+                            <p class="small-text">Latitude</p>
+                            <p class="med-text">25.0000 N</p>
+                            <p class="small-text">Longitude, NY</p>
+                            <p class="med-text">71.0000 W</p>
                         </div>
 
-                        <div>
-                            <label for="construction-class" id="construction-class">Construction class</label>
-                        </div>
-                        <div>
-                            <select id="construction-class" name="construction-class">
-                                <option value="none"></option>
-                                <option value="iso-one" selected>ISO-1</option>
-                                <option value="iso-two">ISO-2</option>
-                                <option value="iso-three">ISO-3</option>
-                                <option value="iso-four">ISO-4</option>
-                                <option value="iso-five">ISO-5</option>
-                            </select>
+                        <div id="owner-header">
+                            <p class="small-text">Owner</p>
+                            <p class="med-text">Thomas Test</p>
+                            <p class="med-text">555-555-5555</p>
                         </div>
                     </div>
-                </form>
-
-                <form id="survey-form">
-                    <div id="general-information-right">
-
-                        <div>
-                            <label for="distance-to-hydrant">Distance to fire hydrant (ft)</label>
-                        </div>
-                        <div>
-                            <input type="number" name="distance-to-hydrant" min="0" value="350">
+                    <img id="image" src="http://i65.tinypic.com/2a4ttf9.png" alt="House photo">
+                    <!--Case header right-->
+                    <div class="case-header" id="case-header-right">
+                        <div id=" customer-header">
+                            <p class="small-text">Insurance Company</p>
+                            <p class="med-text">Mallstate-NY</p>
                         </div>
 
-                        <div>
-                            <label for="living-area">Distance to fire department (mi)</label>
-                        </div>
-                        <div>
-                            <input type="number" name="distance-to-fire-department" min="0" value="4">
+                        <div id="survey-type-header">
+                            <p class="small-text">Survey Type</p>
+                            <p class="med-text">Exterior Only</p>
                         </div>
 
-                        <div>
-                            <label for="adequate-visibility-from-road" id="adequate-visibility-from-road">Adequate
-                                visibility from road</label>
+                        <div id="due-date-header">
+                            <p class="small-text">Date Received</p>
+                            <p class="med-text">01/11/2019</p>
+                            <p class="small-text">Date Due</p>
+                            <p class="med-text">01/21/2019</p>
                         </div>
-                        <div>
-                            <input type="radio" name="visible-from-road" value="yes" checked><label for="yes" class="radiolabel">Yes</label>
-                            <input type="radio" name="visible-from-road" value="no"><label for="no" class="radiolabel">No</label>
 
+                        <div id="inspector-number-header">
+                            <p class="small-text">Inspector Number</p>
+                            <p class="med-text">7811</p>
                         </div>
                     </div>
-                </form>
+                </div>
+
+                <div class="section-header-wrapper">
+                    <p class="section-header-text">General Information</p>
+                </div>
+
+                <div id="general-information-section">
+                    <form id="general information">
+                        <div id="general-information-left">
+
+                            <div>
+                                <label for="year-built" id="number-label">Year built</label>
+                            </div>
+                            <div>
+                                <input id="number" type="number" name="year-built" min="1492" max="2999" value="1976"
+                                    placeholder="YYYY">
+                            </div>
+
+                            <div>
+                                <label for="living-area">Living area (sqft)</label>
+                            </div>
+                            <div>
+                                <input type="number" name="living-area" min="0" value="1250">
+                            </div>
+
+                            <div>
+                                <label for="construction-class" id="construction-class">Construction class</label>
+                            </div>
+                            <div>
+                                <select id="construction-class" name="construction-class">
+                                    <option value="none"></option>
+                                    <option value="iso-one" selected>ISO-1</option>
+                                    <option value="iso-two">ISO-2</option>
+                                    <option value="iso-three">ISO-3</option>
+                                    <option value="iso-four">ISO-4</option>
+                                    <option value="iso-five">ISO-5</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+
+                    <form>
+                        <div id="general-information-right">
+
+                            <div>
+                                <label for="distance-to-hydrant">Distance to fire hydrant (ft)</label>
+                            </div>
+                            <div>
+                                <input type="number" name="distance-to-hydrant" min="0" value="350">
+                            </div>
+
+                            <div>
+                                <label for="living-area">Distance to fire department (mi)</label>
+                            </div>
+                            <div>
+                                <input type="number" name="distance-to-fire-department" min="0" value="4">
+                            </div>
+
+                            <div>
+                                <label for="adequate-visibility-from-road" id="adequate-visibility-from-road">Adequate
+                                    visibility from road</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="visible-from-road" value="yes" checked><label for="yes" class="radiolabel">Yes</label>
+                                <input type="radio" name="visible-from-road" value="no"><label for="no" class="radiolabel">No</label>
+
+                            </div>
+                        </div>
+                    </form>
 
 
 
-            </div>
+                </div>
 
 
 
-            <div class="section-header-wrapper">
-                <p id="description" class="section-header-text">Dwelling Exterior Conditions</p>
-            </div>
+                <div class="section-header-wrapper">
+                    <p id="description" class="section-header-text">Dwelling Exterior Conditions</p>
+                </div>
 
-            <!--Roof Concerns-->
-            <div class="container">
-                <div class="d1">
-                    <form id="dwelling-exterior-conditions">
-                        <label for="roof-severity" class="component-label" id="roof-label">Roof</label>
+                <!--Roof Concerns-->
+                <div class="container">
+                    <div class="d1">
+                        <form id="dwelling-exterior-conditions">
+                            <label for="roof-severity" class="component-label" id="roof-label">Roof</label>
+                    </div>
+                    <div class="d2">
+                        <select id="dropdown" name="roof-severity">
+                            <option value="none"></option>
+                            <option value="major" selected>Major</option>
+                            <option value="minor">Minor</option>
+                            <option value="ok">OK</option>
+                        </select>
+                    </div>
+    </form>
+    <div class="d3">
+        <textarea rows="3" cols="75" name="roof-severity-comments" placeholder="Comments...">Missing shingles on front and right of dwelling roof. Roughly 30% of total roof affected.</textarea>
+    </div>
+    </div>
+    <!--Chimney Concerns-->
+    <div class="container">
+        <div class="d1">
+            <form id="dwelling-exterior-conditions">
+                <label for="chimney-severity" class="component-label" id="chimney-label">Chimney</label>
+        </div>
+        <div class="d2">
+            <select id="chimney-severity" name="chimney-severity">
+                <option value="none"></option>
+                <option value="major">Major</option>
+                <option value="minor">Minor</option>
+                <option value="ok">OK</option>
+            </select>
+        </div>
+        </form>
+        <div class="d3">
+            <textarea rows="3" cols="75" name="chimney-severity-comments" placeholder="Comments..."></textarea>
+        </div>
+    </div>
+    <!--Eaves Concerns-->
+    <div class="container">
+        <div class="d1">
+            <form id="dwelling-exterior-conditions">
+                <label for="eaves-severity" class="component-label" id="eaves-label">Eaves</label>
+        </div>
+        <div class="d2">
+            <select id="eaves-severity" name="eaves-severity">
+                <option value="none"></option>
+                <option value="major">Major</option>
+                <option value="minor" selected>Minor</option>
+                <option value="ok">OK</option>
+            </select>
+        </div>
+        </form>
+        <div class="d3">
+            <textarea rows="3" cols="75" name="eaves-severity-comments" placeholder="Comments...">Peeling paint with exposed wood. Exposure limited to a small section of eaves at rear of dwelling.</textarea>
+        </div>
+    </div>
+    <!--Siding Concerns-->
+    <div class="container">
+        <div class="d1">
+            <form id="dwelling-exterior-conditions">
+                <label for="siding-severity" class="component-label" id="siding-label">Siding</label>
+        </div>
+        <div class="d2">
+            <select id="siding-severity" name="siding-severity">
+                <option value="none"></option>
+                <option value="major" selected>Major</option>
+                <option value="minor">Minor</option>
+                <option value="ok">OK</option>
+            </select>
+        </div>
+        </form>
+        <div class="d3">
+            <textarea rows="3" cols="75" name="siding-severity-comments" placeholder="Comments...">EIFS/Synthetic stucco siding confirmed via observation of foam board, fiberglass mesh, and areas where stucco protrudes over 0.75" from dwelling exterior walls.</textarea>
+        </div>
+    </div>
+    <!--Window Concerns-->
+    <div class="container">
+        <div class="d1">
+            <form id="dwelling-exterior-conditions">
+                <label for="window-severity" class="component-label" id="window-label">Windows</label>
+        </div>
+        <div class="d2">
+            <select id="window-severity" name="window-severity">
+                <option value="none"></option>
+                <option value="major">Major</option>
+                <option value="minor">Minor</option>
+                <option value="ok">OK</option>
+            </select>
+        </div>
+        </form>
+        <div class="d3">
+            <textarea rows="3" cols="75" name="window-severity-comments" placeholder="Comments..."></textarea>
+        </div>
+    </div>
+    <!--Door Concerns-->
+    <div class="container">
+        <div class="d1">
+            <form id="dwelling-exterior-conditions">
+                <label for="door-severity" class="component-label" id="door-label">Doors</label>
+        </div>
+        <div class="d2">
+            <select id="door-severity" name="door-severity">
+                <option value="none"></option>
+                <option value="major">Major</option>
+                <option value="minor">Minor</option>
+                <option value="ok">OK</option>
+            </select>
+        </div>
+        </form>
+        <div class="d3">
+            <textarea rows="3" cols="75" name="door-severity-comments" placeholder="Comments..."></textarea>
+        </div>
+    </div>
+    <!--Steps Concerns-->
+    <div class="container">
+        <div class="d1">
+            <form id="dwelling-exterior-conditions">
+                <label for="steps-severity" class="component-label" id="steps-label">Steps</label>
+        </div>
+        <div class="d2">
+            <select id="steps-severity" name="steps-severity">
+                <option value="none"></option>
+                <option value="major" selected>Major</option>
+                <option value="minor">Minor</option>
+                <option value="ok">OK</option>
+            </select>
+        </div>
+        </form>
+        <div class="d3">
+            <textarea rows="3" cols="75" name="steps-severity-comments" placeholder="Comments...">No handrail in place at rear exterior steps. Steps exceed 36" in height.</textarea>
+        </div>
+    </div>
+    <!--Foundation Concerns-->
+    <div class="container">
+        <div class="d1">
+            <form id="dwelling-exterior-conditions">
+                <label for="foundation-severity" class="component-label" id="foundation-label">Foundation</label>
+        </div>
+        <div class="d2">
+            <select id="foundation-severity" name="foundation-severity">
+                <option value="none"></option>
+                <option value="major">Major</option>
+                <option value="minor">Minor</option>
+                <option value="ok" selected>OK</option>
+            </select>
+        </div>
+        </form>
+        <div class="d3">
+            <textarea rows="3" cols="75" name="foundation-severity-comments" placeholder="Comments...">Largest cracks identified do not exceed 0.25" in width.</textarea>
+        </div>
+    </div>
+
+    </div>
+
+    <!--Other structures-->
+    <div class="container-1">
+
+        <div class="section-header-wrapper">
+            <p class="section-header-text">Other Structures</p>
+        </div>
+
+        <!--Pool-->
+        <div class="container">
+            <div class="d1">
+                <form id="other-structures">
+                    <label for="pool-severity" class="component-label" id="pool-label">Pool</label>
+            </div>
+            <div class="d2">
+                <select id="pool-severity" name="pool-severity">
+                    <option value="none"></option>
+                    <option value="major">Major</option>
+                    <option value="minor">Minor</option>
+                    <option value="ok">OK</option>
+                </select>
+            </div>
+            </form>
+            <div class="d3">
+                <textarea rows="3" cols="75" name="pool-severity-comments" placeholder="Comments..."></textarea>
+            </div>
+        </div>
+        <!--Garage-->
+        <div class="container">
+            <div class="d1">
+                <form id="other-structures">
+                    <label for="garage-severity" class="component-label" id="garage-label">Garage</label>
+            </div>
+            <div class="d2">
+                <select id="garage-severity" name="garage-severity">
+                    <option value="none"></option>
+                    <option value="major" selected>Major</option>
+                    <option value="minor">Minor</option>
+                    <option value="ok">OK</option>
+                </select>
+            </div>
+            </form>
+            <div class="d3">
+                <textarea rows="3" cols="75" name="garage-severity-comments" placeholder="Comments...">Evidence of animal infestation in 400sqft detached garage located in rear yard.</textarea>
+            </div>
+        </div>
+        <!--Outbuilding-->
+        <div class="container">
+            <div class="d1">
+                <form id="other-structures">
+                    <label for="outbuilding-severity" class="component-label" id="outbuilding-label">Outbuilding</label>
+            </div>
+            <div class="d2">
+                <select id="outbuilding-severity" name="outbuilding-severity">
+                    <option value="none"></option>
+                    <option value="major">Major</option>
+                    <option value="minor">Minor</option>
+                    <option value="ok">OK</option>
+                </select>
+            </div>
+            </form>
+            <div class="d3">
+                <textarea rows="3" cols="75" name="outbuilding-severity-comments" placeholder="Comments..."></textarea>
+            </div>
+        </div>
+        <!--Other-->
+        <div class="container">
+            <div class="d1">
+                <form id="other-structures">
+                    <label for="other-severity" class="component-label" id="other-label">Other</label>
+            </div>
+            <div class="d2">
+                <select id="other-severity" name="other-severity">
+                    <option value="none"></option>
+                    <option value="major">Major</option>
+                    <option value="minor">Minor</option>
+                    <option value="ok">OK</option>
+                </select>
+            </div>
+            </form>
+            <div class="d3">
+                <textarea rows="3" cols="75" name="other-severity-comments" placeholder="Comments..."></textarea>
+            </div>
+        </div>
+
+    </div>
+
+    <!--Property-->
+    <div class="container-1">
+
+        <div class="section-header-wrapper">
+            <p class="section-header-text">Property Liability</p>
+        </div>
+
+        <!--Yard-->
+        <div class="container">
+            <div class="d1">
+                <form id="property-liability">
+                    <label for="yard-severity" class="component-label" id="yard-label">Yard</label>
+            </div>
+            <div class="d2">
+                <select id="yard-severity" name="yard-severity">
+                    <option value="none"></option>
+                    <option value="major" selected>Major</option>
+                    <option value="minor">Minor</option>
+                    <option value="ok">OK</option>
+                </select>
+            </div>
+            </form>
+            <div class="d3">
+                <textarea rows="3" cols="75" name="yard-severity-comments" placeholder="Comments...">Several unattended ladders and scaffolding observed in unfenced area of rear yard, easily accessible to passers by. No clear indication equipment presence is due to ongoing renovations.</textarea>
+            </div>
+        </div>
+        <!--Trees-->
+        <div class="container">
+            <div class="d1">
+                <form id="property-liability">
+                    <label for="trees-severity" class="component-label" id="trees-label">Trees</label>
+            </div>
+            <div class="d2">
+                <select id="trees-severity" name="trees-severity">
+                    <option value="none"></option>
+                    <option value="major">Major</option>
+                    <option value="minor">Minor</option>
+                    <option value="ok">OK</option>
+                </select>
+            </div>
+            </form>
+            <div class="d3">
+                <textarea rows="3" cols="75" name="trees-severity-comments" placeholder="Comments..."></textarea>
+            </div>
+        </div>
+        <!--Walkways-->
+        <div class="container">
+            <div class="d1">
+                <form id="property-liability">
+                    <label for="walkway-severity" class="component-label" id="outbwalkwayuilding-label">Walkways</label>
+            </div>
+            <div class="d2">
+                <select id="walkway-severity" name="walkway-severity">
+                    <option value="none"></option>
+                    <option value="major">Major</option>
+                    <option value="minor">Minor</option>
+                    <option value="ok">OK</option>
+                </select>
+            </div>
+            </form>
+            <div class="d3">
+                <textarea rows="3" cols="75" name="walkway-severity-comments" placeholder="Comments..."></textarea>
+            </div>
+        </div>
+        <!--Exposures-->
+        <div class="container">
+            <div class="d1">
+                <form id="property-liability">
+                    <label for="exposure-severity" class="component-label" id="exposure-label">Exposures</label>
+            </div>
+            <div class="d2">
+                <select id="exposure-severity" name="exposure-severity">
+                    <option value="none"></option>
+                    <option value="major">Major</option>
+                    <option value="minor">Minor</option>
+                    <option value="ok">OK</option>
+                </select>
+            </div>
+            </form>
+            <div class="d3">
+                <textarea rows="3" cols="75" name="exposure-severity-comments" placeholder="Comments..."></textarea>
+            </div>
+        </div>
+        <!--Other-->
+        <div class="container">
+            <div class="d1">
+                <form id="property-liability">
+                    <label for="other-liability-severity" class="component-label" id="other-liability-label">Other</label>
+            </div>
+            <div class="d2">
+                <select id="other-liability-severity" name="other-liability-severity">
+                    <option value="none"></option>
+                    <option value="major">Major</option>
+                    <option value="minor">Minor</option>
+                    <option value="ok">OK</option>
+                </select>
+            </div>
+            </form>
+            <div class="d3">
+                <textarea rows="3" cols="75" name="other-liability-severity-comments" placeholder="Comments..."></textarea>
+            </div>
+        </div>
+
+    </div>
+
+    <!--Additional Comments-->
+    <div class="container-1">
+
+        <div class="section-header-wrapper">
+            <p class="section-header-text">Additional Comments</p>
+        </div>
+
+        <!--Additonal comments-->
+        <div class="container-additional-comments">
+
+            <div class="d3-additional">
+                <textarea rows="4" cols="85" name="additional-comments" placeholder="Comments...">Upon arrival at 20 Farmdale Ave, inspector was greeted at door by policyholder Thomas Test, who allowed full access to property.</textarea>
+            </div>
+        </div>
+
+    </div>
+
+    <!--Submission-->
+    <div class="container-1">
+
+        <div class="section-header-wrapper">
+            <p class="section-header-text">Report Submission</p>
+        </div>
+
+        <!--Additonal comments-->
+        <div class="container-submission">
+
+            <div class="d1">
+                <p class="med-text">I hereby attest that the below name and email address information acts as
+                    my
+                    digital signature.</p>
+            </div>
+            <div class="credential-input-container">
+                <div id="credential-input-left">
+                    <label for="inspector-name" class="credential-label" id="name-label">Name</label>
+                    <input class="name-input" name="inspector-name" required id="name" type="text" placeholder="Name"
+                        value="Hector Inspector">
                 </div>
-                <div class="d2">
-                    <select id="roof-severity" name="roof-severity">
-                        <option value="none"></option>
-                        <option value="major" selected>Major</option>
-                        <option value="minor">Minor</option>
-                        <option value="ok">OK</option>
-                    </select>
-                </div>
-                </form>
-                <div class="d3">
-                    <textarea rows="3" cols="75" name="roof-severity-comments" placeholder="Comments...">Missing shingles on front and right of dwelling roof. Roughly 30% of total roof affected.</textarea>
+                <div id="credential-input-right">
+                    <label for="inspector-email" class="credential-label" id="email-label">Email address</label>
+                    <input class="email-input" name="inspector-email" id="email" required type="email" placeholder="Email address"
+                        value="hector@inspector.com">
                 </div>
             </div>
-            <!--Chimney Concerns-->
-            <div class="container">
-                <div class="d1">
-                    <form id="dwelling-exterior-conditions">
-                        <label for="chimney-severity" class="component-label" id="chimney-label">Chimney</label>
-                </div>
-                <div class="d2">
-                    <select id="chimney-severity" name="chimney-severity">
-                        <option value="none"></option>
-                        <option value="major">Major</option>
-                        <option value="minor">Minor</option>
-                        <option value="ok">OK</option>
-                    </select>
-                </div>
-                </form>
-                <div class="d3">
-                    <textarea rows="3" cols="75" name="chimney-severity-comments" placeholder="Comments..."></textarea>
-                </div>
-            </div>
-            <!--Eaves Concerns-->
-            <div class="container">
-                <div class="d1">
-                    <form id="dwelling-exterior-conditions">
-                        <label for="eaves-severity" class="component-label" id="eaves-label">Eaves</label>
-                </div>
-                <div class="d2">
-                    <select id="eaves-severity" name="eaves-severity">
-                        <option value="none"></option>
-                        <option value="major">Major</option>
-                        <option value="minor" selected>Minor</option>
-                        <option value="ok">OK</option>
-                    </select>
-                </div>
-                </form>
-                <div class="d3">
-                    <textarea rows="3" cols="75" name="eaves-severity-comments" placeholder="Comments...">Peeling paint with exposed wood. Exposure limited to a small section of eaves at rear of dwelling.</textarea>
-                </div>
-            </div>
-            <!--Siding Concerns-->
-            <div class="container">
-                <div class="d1">
-                    <form id="dwelling-exterior-conditions">
-                        <label for="siding-severity" class="component-label" id="siding-label">Siding</label>
-                </div>
-                <div class="d2">
-                    <select id="siding-severity" name="siding-severity">
-                        <option value="none"></option>
-                        <option value="major" selected>Major</option>
-                        <option value="minor">Minor</option>
-                        <option value="ok">OK</option>
-                    </select>
-                </div>
-                </form>
-                <div class="d3">
-                    <textarea rows="3" cols="75" name="siding-severity-comments" placeholder="Comments...">EIFS/Synthetic stucco siding confirmed via observation of foam board, fiberglass mesh, and areas where stucco protrudes over 0.75" from dwelling exterior walls.</textarea>
-                </div>
-            </div>
-            <!--Window Concerns-->
-            <div class="container">
-                <div class="d1">
-                    <form id="dwelling-exterior-conditions">
-                        <label for="window-severity" class="component-label" id="window-label">Windows</label>
-                </div>
-                <div class="d2">
-                    <select id="window-severity" name="window-severity">
-                        <option value="none"></option>
-                        <option value="major">Major</option>
-                        <option value="minor">Minor</option>
-                        <option value="ok">OK</option>
-                    </select>
-                </div>
-                </form>
-                <div class="d3">
-                    <textarea rows="3" cols="75" name="window-severity-comments" placeholder="Comments..."></textarea>
-                </div>
-            </div>
-            <!--Door Concerns-->
-            <div class="container">
-                <div class="d1">
-                    <form id="dwelling-exterior-conditions">
-                        <label for="door-severity" class="component-label" id="door-label">Doors</label>
-                </div>
-                <div class="d2">
-                    <select id="door-severity" name="door-severity">
-                        <option value="none"></option>
-                        <option value="major">Major</option>
-                        <option value="minor">Minor</option>
-                        <option value="ok">OK</option>
-                    </select>
-                </div>
-                </form>
-                <div class="d3">
-                    <textarea rows="3" cols="75" name="door-severity-comments" placeholder="Comments..."></textarea>
-                </div>
-            </div>
-            <!--Steps Concerns-->
-            <div class="container">
-                <div class="d1">
-                    <form id="dwelling-exterior-conditions">
-                        <label for="steps-severity" class="component-label" id="steps-label">Steps</label>
-                </div>
-                <div class="d2">
-                    <select id="steps-severity" name="steps-severity">
-                        <option value="none"></option>
-                        <option value="major" selected>Major</option>
-                        <option value="minor">Minor</option>
-                        <option value="ok">OK</option>
-                    </select>
-                </div>
-                </form>
-                <div class="d3">
-                    <textarea rows="3" cols="75" name="steps-severity-comments" placeholder="Comments...">No handrail in place at rear exterior steps. Steps exceed 36" in height.</textarea>
-                </div>
-            </div>
-            <!--Foundation Concerns-->
-            <div class="container">
-                <div class="d1">
-                    <form id="dwelling-exterior-conditions">
-                        <label for="foundation-severity" class="component-label" id="foundation-label">Foundation</label>
-                </div>
-                <div class="d2">
-                    <select id="foundation-severity" name="foundation-severity">
-                        <option value="none"></option>
-                        <option value="major">Major</option>
-                        <option value="minor">Minor</option>
-                        <option value="ok" selected>OK</option>
-                    </select>
-                </div>
-                </form>
-                <div class="d3">
-                    <textarea rows="3" cols="75" name="foundation-severity-comments" placeholder="Comments...">Largest cracks identified do not exceed 0.25" in width.</textarea>
-                </div>
+            <div class="credential-input-container-1">
+                <input id="name" class="checkbox-left" type="checkbox" value="print" checked><label for="print" class="checkboxlabel">Print
+                    on submit</label>
+                <input id="email" class="checkbox-right" type="checkbox" value="email" checked><label for="email" class="checkboxlabel">Email
+                    on submit</label>
+
             </div>
 
         </div>
 
-        <!--Other structures-->
-        <div class="container-1">
 
-            <div class="section-header-wrapper">
-                <p class="section-header-text">Other Structures</p>
-            </div>
+    </div>
 
-            <!--Pool-->
-            <div class="container">
-                <div class="d1">
-                    <form id="other-structures">
-                        <label for="pool-severity" class="component-label" id="pool-label">Pool</label>
-                </div>
-                <div class="d2">
-                    <select id="pool-severity" name="pool-severity">
-                        <option value="none"></option>
-                        <option value="major">Major</option>
-                        <option value="minor">Minor</option>
-                        <option value="ok">OK</option>
-                    </select>
-                </div>
-                </form>
-                <div class="d3">
-                    <textarea rows="3" cols="75" name="pool-severity-comments" placeholder="Comments..."></textarea>
-                </div>
-            </div>
-            <!--Garage-->
-            <div class="container">
-                <div class="d1">
-                    <form id="other-structures">
-                        <label for="garage-severity" class="component-label" id="garage-label">Garage</label>
-                </div>
-                <div class="d2">
-                    <select id="garage-severity" name="garage-severity">
-                        <option value="none"></option>
-                        <option value="major" selected>Major</option>
-                        <option value="minor">Minor</option>
-                        <option value="ok">OK</option>
-                    </select>
-                </div>
-                </form>
-                <div class="d3">
-                    <textarea rows="3" cols="75" name="garage-severity-comments" placeholder="Comments...">Evidence of animal infestation in 400sqft detached garage located in rear yard.</textarea>
-                </div>
-            </div>
-            <!--Outbuilding-->
-            <div class="container">
-                <div class="d1">
-                    <form id="other-structures">
-                        <label for="outbuilding-severity" class="component-label" id="outbuilding-label">Outbuilding</label>
-                </div>
-                <div class="d2">
-                    <select id="outbuilding-severity" name="outbuilding-severity">
-                        <option value="none"></option>
-                        <option value="major">Major</option>
-                        <option value="minor">Minor</option>
-                        <option value="ok">OK</option>
-                    </select>
-                </div>
-                </form>
-                <div class="d3">
-                    <textarea rows="3" cols="75" name="outbuilding-severity-comments" placeholder="Comments..."></textarea>
-                </div>
-            </div>
-            <!--Other-->
-            <div class="container">
-                <div class="d1">
-                    <form id="other-structures">
-                        <label for="other-severity" class="component-label" id="other-label">Other</label>
-                </div>
-                <div class="d2">
-                    <select id="other-severity" name="other-severity">
-                        <option value="none"></option>
-                        <option value="major">Major</option>
-                        <option value="minor">Minor</option>
-                        <option value="ok">OK</option>
-                    </select>
-                </div>
-                </form>
-                <div class="d3">
-                    <textarea rows="3" cols="75" name="other-severity-comments" placeholder="Comments..."></textarea>
-                </div>
-            </div>
+    <button id="submit" type="submit">Submit</button>
 
-        </div>
-
-        <!--Property-->
-        <div class="container-1">
-
-            <div class="section-header-wrapper">
-                <p class="section-header-text">Property Liability</p>
-            </div>
-
-            <!--Yard-->
-            <div class="container">
-                <div class="d1">
-                    <form id="property-liability">
-                        <label for="yard-severity" class="component-label" id="yard-label">Yard</label>
-                </div>
-                <div class="d2">
-                    <select id="yard-severity" name="yard-severity">
-                        <option value="none"></option>
-                        <option value="major" selected>Major</option>
-                        <option value="minor">Minor</option>
-                        <option value="ok">OK</option>
-                    </select>
-                </div>
-                </form>
-                <div class="d3">
-                    <textarea rows="3" cols="75" name="yard-severity-comments" placeholder="Comments...">Several unattended ladders and scaffolding observed in unfenced area of rear yard, easily accessible to passers by. No clear indication equipment presence is due to ongoing renovations.</textarea>
-                </div>
-            </div>
-            <!--Trees-->
-            <div class="container">
-                <div class="d1">
-                    <form id="property-liability">
-                        <label for="trees-severity" class="component-label" id="trees-label">Trees</label>
-                </div>
-                <div class="d2">
-                    <select id="trees-severity" name="trees-severity">
-                        <option value="none"></option>
-                        <option value="major">Major</option>
-                        <option value="minor">Minor</option>
-                        <option value="ok">OK</option>
-                    </select>
-                </div>
-                </form>
-                <div class="d3">
-                    <textarea rows="3" cols="75" name="trees-severity-comments" placeholder="Comments..."></textarea>
-                </div>
-            </div>
-            <!--Walkways-->
-            <div class="container">
-                <div class="d1">
-                    <form id="property-liability">
-                        <label for="walkway-severity" class="component-label" id="outbwalkwayuilding-label">Walkways</label>
-                </div>
-                <div class="d2">
-                    <select id="walkway-severity" name="walkway-severity">
-                        <option value="none"></option>
-                        <option value="major">Major</option>
-                        <option value="minor">Minor</option>
-                        <option value="ok">OK</option>
-                    </select>
-                </div>
-                </form>
-                <div class="d3">
-                    <textarea rows="3" cols="75" name="walkway-severity-comments" placeholder="Comments..."></textarea>
-                </div>
-            </div>
-            <!--Exposures-->
-            <div class="container">
-                <div class="d1">
-                    <form id="property-liability">
-                        <label for="exposure-severity" class="component-label" id="exposure-label">Exposures</label>
-                </div>
-                <div class="d2">
-                    <select id="exposure-severity" name="exposure-severity">
-                        <option value="none"></option>
-                        <option value="major">Major</option>
-                        <option value="minor">Minor</option>
-                        <option value="ok">OK</option>
-                    </select>
-                </div>
-                </form>
-                <div class="d3">
-                    <textarea rows="3" cols="75" name="exposure-severity-comments" placeholder="Comments..."></textarea>
-                </div>
-            </div>
-            <!--Other-->
-            <div class="container">
-                <div class="d1">
-                    <form id="property-liability">
-                        <label for="other-liability-severity" class="component-label" id="other-liability-label">Other</label>
-                </div>
-                <div class="d2">
-                    <select id="other-liability-severity" name="other-liability-severity">
-                        <option value="none"></option>
-                        <option value="major">Major</option>
-                        <option value="minor">Minor</option>
-                        <option value="ok">OK</option>
-                    </select>
-                </div>
-                </form>
-                <div class="d3">
-                    <textarea rows="3" cols="75" name="other-liability-severity-comments" placeholder="Comments..."></textarea>
-                </div>
-            </div>
-
-        </div>
-
-        <!--Additional Comments-->
-        <div class="container-1">
-
-            <div class="section-header-wrapper">
-                <p class="section-header-text">Additional Comments</p>
-            </div>
-
-            <!--Additonal comments-->
-            <div class="container-additional-comments">
-
-                <div class="d3-additional">
-                    <textarea rows="4" cols="85" name="additional-comments" placeholder="Comments...">Upon arrival at 20 Farmdale Ave, inspector was greeted at door by policyholder Thomas Test, who allowed full access to property.</textarea>
-                </div>
-            </div>
-
-        </div>
-
-        <!--Submission-->
-        <div class="container-1">
-
-            <div class="section-header-wrapper">
-                <p class="section-header-text">Report Submission</p>
-            </div>
-
-            <!--Additonal comments-->
-            <div class="container-submission">
-
-                <div class="d1">
-                    <p class="med-text">I hereby attest that the below name and email address information acts as
-                        my
-                        digital signature.</p>
-                </div>
-                <div class="credential-input-container">
-                    <input id="name" required class="credential-input-left" type="text" placeholder="Name" value="Hector Inspector">
-                    <input id="email" class="credential-input-right" type="email" placeholder="Email address" value="hector@inspector.com">
-                </div>
-
-            </div>
-
-
-        </div>
-
-        <button type="submit">Submit</button>
-
-
+    </form>
 
 
 
